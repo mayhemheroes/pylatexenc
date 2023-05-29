@@ -20,8 +20,7 @@ def TestOneInput(data):
         if choice == 0:
             LatexNodes2Text().latex_to_text(text)
         elif choice == 1:
-            latex = pylatexenc.latexwalker(text)
-            pylatexenc.latex2text(latex)
+            pylatexenc.latexwalker(text)
         elif choice == 2:
             unicode_to_latex(text)
         else:
