@@ -3,10 +3,12 @@ import atheris
 import sys
 import fuzz_helpers
 
+from pylatexenc.latexencode import unicode_to_latex
+import pylatexenc.latexwalker
+
 with atheris.instrument_imports():
     from pylatexenc.latex2text import LatexNodes2Text
-    from pylatexenc.latexencode import unicode_to_latex
-    import pylatexenc.latexwalker
+
 
 ctr = 0
 
