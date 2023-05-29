@@ -25,10 +25,8 @@ def TestOneInput(data):
             unicode_to_latex(text)
         else:
             pylatexenc.latexencode(text)
-    except TypeError:
-        if ctr > 1000:
-            raise
-    return -1
+    except Exception:
+        return -1
 def main():
     atheris.Setup(sys.argv, TestOneInput)
     atheris.Fuzz()
