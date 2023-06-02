@@ -1,0 +1,8 @@
+project: pylatexenc
+target: fuzz-latex
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_latex.py
+    libfuzzer: true
